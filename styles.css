@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+                "nav main" 1fr
+                / 20rem 1fr;
+}
+
+nav, main {
+    height: 100%;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #fff;
+}
+
+main {
+    grid-area: main;
+    background-color: #ddd;
+}
