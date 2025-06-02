@@ -1,10 +1,12 @@
+/*======================================LAYOUT======================================*/
+
 :root {
     --cse-blue: rgb(30, 90, 165);
     --cse-red: rgb(195, 45, 45);
     --navgray: rgba(128, 128, 128, 0.5);
-    --btn-gradient1: #d5d5d5;
+    --btn-gradient1: #d0d0d0;
     --btn-gradient2: #e0e0e0;
-    --btn-gradient3: #f0f0f0;
+    --btn-gradient3: #fafafa;
 }
 
 * {
@@ -44,8 +46,6 @@ nav {
     box-shadow: 0 0 50px -25px white;
 }
 
-/*======================================LAYOUT======================================*/
-
 /*=======================================NAV========================================*/
 
 /*Main Logo*/
@@ -81,6 +81,7 @@ nav {
         box-shadow: 0 0 10px 3px white;
         transform: scale(1.01);
     }
+
     #main-logo-container:active {
         background: linear-gradient(
         to bottom,
@@ -121,6 +122,7 @@ nav {
     }
     #R {
         color: green;
+        margin-left: -1.2rem;
     }
 
 
@@ -133,6 +135,14 @@ nav {
 }
 
 .course-option {
+    background: linear-gradient(
+        to bottom,
+        var(--btn-gradient3) 0%,
+        var(--btn-gradient2) 20%,
+        var(--btn-gradient1) 50%,
+        var(--btn-gradient2) 80%,
+        var(--btn-gradient3) 100% 
+        );
     width: 60%;
     min-width: 20rem;
     font-size: 1.5rem;
